@@ -1,0 +1,82 @@
+# load the Required Packages.
+
+# Maintain seperate files for 
+1).Reading the data
+2) Visualization.
+3).Replace the Missing Values.
+4).Create the New Features.
+5).Crete the Dummy columns foe factor variables.
+
+
+
+* The dimensions of the dataset
+train--->  307511    122
+test--->    48744    121
+
+* The Respose value in Train data
+    0      1        ------>         0         1 
+ 282686  24825                91.927118  8.072882 
+
+# Dataset is imbalanced .
+
+
+* Column types 
+-->Here Mixed Column types Integer,numeric(decimal value),factor(character).
+
+The following are the Factor columns outof 122
+
+ [1] "NAME_CONTRACT_TYPE"         "CODE_GENDER"               
+ [3] "FLAG_OWN_CAR"               "FLAG_OWN_REALTY"           
+ [5] "NAME_TYPE_SUITE"            "NAME_INCOME_TYPE"          
+ [7] "NAME_EDUCATION_TYPE"        "NAME_FAMILY_STATUS"        
+ [9] "NAME_HOUSING_TYPE"          "OCCUPATION_TYPE"           
+[11] "WEEKDAY_APPR_PROCESS_START" "ORGANIZATION_TYPE"         
+[13] "FONDKAPREMONT_MODE"         "HOUSETYPE_MODE"            
+[15] "WALLSMATERIAL_MODE"         "EMERGENCYSTATE_MODE"
+
+* Visualization.
+1).Categorical Columns using the Bar Plot 
+Write a function for all categorical columns.
+2).Continuous Columns Using the Histogram.
+Write a function for all continuous columns.
+3).Categorical Column by Targetwise using the Bar plot .
+write a function for all Categorical columns with the Target column.
+4).Continuous column by Targetwise using the Kernal Density plot
+Write a function for all continuous column with the Target column 
+5).Distribution for Income of the client with Different Factors.
+Write a function of Boxplot for Income of client.
+6) Age of the Client.
+Divide the Days_of _Birth column with 365 for converting into Years.
+Use the Histogram.
+7).Group the Age Group to know failure to repay the amount.
+
+
+* Missing Values Operation.
+
+"The total Missing Percentage in dataset  24.3959"
+
+Column wise missing percentage 
+ * Top 10 High missing Percentage
+                         colname missing
+1                COMMONAREA_AVG   69.87
+2               COMMONAREA_MODE   69.87
+3               COMMONAREA_MEDI   69.87
+4       NONLIVINGAPARTMENTS_AVG   69.43
+5      NONLIVINGAPARTMENTS_MODE   69.43
+6      NONLIVINGAPARTMENTS_MEDI   69.43
+7            FONDKAPREMONT_MODE   68.39
+8          LIVINGAPARTMENTS_AVG   68.35
+9         LIVINGAPARTMENTS_MODE   68.35
+10        LIVINGAPARTMENTS_MEDI   68.35
+
+# Now seperate the factor(categorical) and discrete numeric and continuous features.
+
+1).After seperating the columns based on the above condition.
+2).Replace the missing values with Mode.
+        if --->factor(categorical) and discrete numeric 
+3).Replace the Missing values with Median
+        if --->Continuous numeric 
+        
+        
+
+
